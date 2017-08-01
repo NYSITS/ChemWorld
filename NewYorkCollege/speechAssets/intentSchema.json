@@ -1,0 +1,40 @@
+{
+  "intents": [
+    {
+      "intent": "SchoolInfoIntent",
+      "slots": [
+        {
+          "name": "School",
+          "type": "LIST_OF_SCHOOLS"
+        }
+      ]
+    },
+    {
+      "intent": "AnotherSchoolIntent"
+    },
+    {
+      "intent": "SearchIntent",
+      "slots": [
+        {
+          "name": "Criteria",
+          "type": "LIST_OF_CRITERIA"
+        }
+      ]
+    },
+    {
+      "intent": "AMAZON.HelpIntent"
+    },
+    {
+      "intent": "AMAZON.YesIntent"
+    },
+    {
+      "intent": "AMAZON.NoIntent"
+    },
+    {
+      "intent": "AMAZON.StopIntent"
+    },
+    {
+      "intent": "AMAZON.CancelIntent"
+    }
+  ]
+}

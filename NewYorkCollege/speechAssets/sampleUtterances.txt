@@ -1,0 +1,21 @@
+SchoolInfoIntent {School}
+SchoolInfoIntent about {School}
+SchoolInfoIntent tell me about {School}
+SchoolInfoIntent information about {School}
+SchoolInfoIntent information on {School}
+SchoolInfoIntent info about {School}
+SchoolInfoIntent info on {School}
+
+AnotherSchoolIntent i would like to hear about another university
+AnotherSchoolIntent i would like to hear about another college
+AnotherSchoolIntent i would like to hear about another school
+AnotherSchoolIntent another college
+AnotherSchoolIntent another university
+AnotherSchoolIntent another school
+
+SearchIntent give me a list of {Criteria} universities
+SearchIntent give me a list of {Criteria} colleges
+SearchIntent give me a list of {Criteria} schools
+SearchIntent {Criteria} universities
+SearchIntent {Criteria} colleges
+SearchIntent {Criteria} schools

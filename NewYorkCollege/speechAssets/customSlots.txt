@@ -1,0 +1,70 @@
+----------- For LIST_OF_SCHOOLS -----------
+adirondack community college
+broome community college
+cayuga county community college
+clinton community college
+columbia greene community college
+corning community college
+dutchess community college
+erie community college
+fashion institute of technology
+finger lakes community college
+fulton montgomery community college
+genesee community college
+herkimer county community college
+hudson valley community college
+jamestown community college
+jefferson community college
+mohawk valley community college
+monroe community college
+nassau community college
+niagara county community college
+north country community college
+onondaga community college
+orange county community college
+rockland community college
+schenectady county community college
+suffolk county community college
+sullivan county community college
+tompkins cortland community college
+ulster county community college
+westchester community college
+suny brockport
+suny buffalo
+suny cortland
+empire state college
+suny fredonia
+suny geneseo
+suny new paltz
+suny old westbury
+suny oneonta
+suny oswego
+suny plattsburgh
+suny potsdam
+suny purchase
+suny albany
+alfred university
+suny binghamton
+buffalo state
+cornell
+downstate medical
+environment science and forestry
+college of optometry
+suny stony brook
+upstate medical
+alfred state
+suny canton
+suny cobleskill
+suny delhi
+suny farmingdale
+suny maritime
+suny morrisville
+suny institute of technology
+
+----------- For LIST_OF_SEARCHES -----------
+2 year
+4 year
+community
+comprehensive
+doctoral
+technology
