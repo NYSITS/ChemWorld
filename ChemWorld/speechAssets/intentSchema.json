@@ -1,0 +1,46 @@
+{
+  "intents": [
+    {
+      "intent": "MSDSIntent",
+      "slots": [
+        {
+          "name": "Chemical",
+          "type": "LIST_OF_CHEMICALS"
+        }
+      ]
+    },
+    {
+      "intent": "ChemicalsListIntent"
+    },
+    {
+      "intent": "QuizIntent"
+    },
+    {
+      "intent": "AnswerIntent",
+      "slots": [
+        {
+          "name": "Number",
+          "type": "AMAZON.NUMBER"
+        }
+      ]
+    },
+    {
+      "intent": "AMAZON.RepeatIntent"
+    },
+    {
+      "intent": "AMAZON.HelpIntent"
+    },
+    {
+      "intent": "AMAZON.YesIntent"
+    },
+    {
+      "intent": "AMAZON.NoIntent"
+    },
+    {
+      "intent": "AMAZON.StopIntent"
+    },
+    {
+      "intent": "AMAZON.CancelIntent"
+    }
+  ]
+}

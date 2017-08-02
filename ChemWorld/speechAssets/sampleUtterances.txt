@@ -1,0 +1,33 @@
+MSDSIntent {Chemical}
+MSDSIntent give me information about {Chemical}
+MSDSIntent give me information on {Chemical}
+MSDSIntent give me info about {Chemical}
+MSDSIntent give me info on {Chemical}
+
+ChemicalsListIntent what chemicals can you tell me about
+ChemicalsListIntent what chemicals can i learn about
+ChemicalsListIntent tell me what chemicals you can tell me about
+ChemicalsListIntent tell me what chemicals i can learn about
+ChemicalsListIntent list of chemicals
+ChemicalsListIntent what are some common chemicals
+ChemicalsListIntent what are some common household chemicals
+
+QuizIntent quiz me
+QuizIntent start a quiz
+QuizIntent start a new quiz
+QuizIntent new quiz
+QuizIntent test me
+QuizIntent let's play
+
+AnswerIntent {Number}
+AnswerIntent the answer is {Number}
+AnswerIntent my answer is {Number}
+AnswerIntent is the answer {Number}
+AnswerIntent is it {Number}
+AnswerIntent i think it is {Number}
+AnswerIntent i think it's {Number}
+AnswerIntent i know it's {Number}
+AnswerIntent i know it is {Number}
+
+
+https://my.clevelandclinic.org/health/articles/household-chemicals-chart-whats-in-my-house
