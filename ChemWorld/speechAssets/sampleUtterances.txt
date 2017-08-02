@@ -1,6 +1,6 @@
 MSDSIntent {Chemical}
-MSDSIntent give me information about {Chemical}
-MSDSIntent give me information on {Chemical}
+MSDSIntent what is the chemical in {Chemical}
+MSDSIntent what makes {Chemical} dangerous
 MSDSIntent give me info about {Chemical}
 MSDSIntent give me info on {Chemical}
 

@@ -61,6 +61,26 @@ module.exports = {
     "section_13": "Waste Disposal: Waste must be disposed of in accordance with federal, state and local environmental control regulations",
     "section_14": "DOT Classification: CLASS 3: Flammable liquid"
   },
+  "cleaners" : {
+    "location": "in the laundry room",
+    "common_name": "All-Purpose Cleaners",
+    "hazard_ingredient": "Ammonia",
+    "msds_health": "3",
+    "msds_fire": "0",
+    "msds_reactivity": "0",
+    "section_3": "Potential Acute Health Effects: Very hazardous in case of skin contact (corrosive, irritant, permeator), of eye contact (irritant), of ingestion, . Non-corrosive to the eyes. Non-corrosive for lungs. Liquid or spray mist may produce tissue damage particularly on mucous membranes of eyes, mouth and respiratory tract. Skin contact may produce burns. Inhalation of the spray mist may produce severe irritation of respiratory tract, characterized by coughing, choking, or shortness of breath. Severe over-exposure can result in death. Inflammation of the eye is characterized by redness, watering, and itching. Skin inflammation is characterized by itching, scaling, reddening, or, occasionally, blistering. Pote",
+    "section_4": "First Aid Measures for, Eye Contact:",
+    "section_5": "",
+    "section_6": "Accidential Release Measures,",
+    "section_7": "",
+    "section_8": "",
+    "section_9": "",
+    "section_10": "",
+    "section_11": "",
+    "section_12": "",
+    "section_13": "",
+    "section_14": ""
+  },
   "" : {
     "location": "",
     "common_name": "",

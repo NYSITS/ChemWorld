@@ -64,7 +64,7 @@ function onIntent(intentRequest, session, callback) {
 
   // Dispatch to custom intents here:
   if ("MSDSIntent" === intentName) {
-    getMSDSInfo(intent, session, callback);
+    householdChemical(intent, session, callback);
   } else if ("HealthEffectsIntent" === intentName) {
     healthEffects(intent, session, callback);
   } else if ("ChemicalsListIntent" === intentName) {
@@ -78,7 +78,7 @@ function onIntent(intentRequest, session, callback) {
   } else if ("AMAZON.HelpIntent" === intentName) {
     getHelp(intent, session, callback);
   } else if ("AMAZON.YesIntent" === intentName) {
-    if (previousPlace === "MSDS Info") {
+    if (previousPlace === "Chemical Info") {
       anythingElse(intent, session, callback);
     } else if (previousPlace === "Answer") {
       handleQuiz(intent, session, callback);
@@ -120,7 +120,7 @@ function getWelcomeResponse(callback) {
   callback(sessionAttributes, buildSpeechletResponse(CARD_TITLE, speechOutput, repromptText, shouldEndSession));
 }
 
-function getMSDSInfo(intent, session, callback) {
+function householdChemical(intent, session, callback) {
   var sessionAttributes = {};
   var CARD_TITLE;
   var chemical = intent.slots.Chemical.value.toLowerCase();
@@ -134,43 +134,24 @@ function getMSDSInfo(intent, session, callback) {
     CARD_TITLE = "I Didn't Catch That Answer";
   } else {
     var location = msds[chemical].location;
-    var commonName = msds[chemical].common_name;
-    var hazardIngredient = msds[chemical].hazard_ingredient;
-    var health = msds[chemical].msds_health;
-    var fire = msds[chemical].msds_fire;
-    var reactivity = msds[chemical].msds_reactivity;
-    var section3 = msds[chemical].section_3;
-    var section4 = msds[chemical].section_4;
-    var section5 = msds[chemical].section_5;
-    var section6 = msds[chemical].section_6;
-    var section7 = msds[chemical].section_7;
-    var section8 = msds[chemical].section_8;
-    var section9 = msds[chemical].section_9;
-    var section10 = msds[chemical].section_10;
-    var section11 = msds[chemical].section_11;
-    var section12 = msds[chemical].section_12;
-    var section13 = msds[chemical].section_13;
-    var section14 = msds[chemical].section_14;
+    var name = msds[chemical].common_name;
+    var hazardous_ingredient = msds[chemical].hazardous_ingredient;
 
-    CARD_TITLE = commonName + " MSDS Information";
-    speechOutput = commonName + " is commonly found " + location + ". The hazardous ingredient in " + commonName + " is " + hazardIngredient + ". It has a Health Rating of " + health
-    + ", a Fire Rating of " + fire + ", and a Reactivity Rating of " + reactivity + ". The following information is found in sections 3 through 14 of the MSDS Sheet. Section 3: "
-    + section3 + ". Section 4: " + section4 + ". Section 5: " + section5 + ". Section 6: " + section6 + ". Section 7: " + section7 + ". Section 8: " + section8 + ". Section 9: "
-    + section9 + ". Section 10: " + section10 + ". Section 11: " + section11 + ". Section 12: " + section12 + ". Section 13: " + section13 + ". And Section 14: " + section14
-    + ". Is there anything else I can help you with today? ";
-    repromptText = "Is there anything else I can help you with today? ";
+    CARD_TITLE = name;
+    speechOutput = "The main hazardous ingredient in " + name + " is " + hazardous_ingredient + ". Would you like to hear more information about " + hazardous_ingredient + " that can be found in a Material Safety Data Sheet? ";
+    repromptText = "Would you like to hear more information about " + hazardous_ingredient + " that can be found in a Material Safety Data Sheet? ";
   }
 
   sessionAttributes = {
     "speechOutput": speechOutput,
     "repromptText": repromptText,
-    "previousPlace": "MSDS Info"
+    "previousPlace": "Chemical Info"
   };
 
   callback(sessionAttributes, buildSpeechletResponse(CARD_TITLE, speechOutput, repromptText, shouldEndSession));
 }
 
-function healthEffects(intent, session, callback) {
+function healthEffect(intent, session, callback) {
   var sessionAttributes = {};
   var CARD_TITLE;
   var chemical = intent.slots.Chemical.value.toLowerCase();
@@ -202,6 +183,32 @@ function healthEffects(intent, session, callback) {
   };
 
   callback(sessionAttributes, buildSpeechletResponse(CARD_TITLE, speechOutput, repromptText, shouldEndSession));
+}
+
+function contact(intent, session, callback) {
+  var sessionAttributes = {};
+  var CARD_TITLE;
+  var chemical = intent.slots.Chemical.toLowerCase();
+  var speechOutput;
+  var repromptText;
+  var shouldEndSession = false;
+
+  if (!msds[chemical]) {
+    speechOutput = "I'm sorry, I don't know about that chemical. Please try asking about a different chemical I do know about. ";
+    repromptText = "Please ask about a different chemical. ";
+    CARD_TITLE = "I Didn't Catch That Answer";
+  } else {
+    var location = msds[chemical].location;
+    var name = msds[chemical].common_name;
+    var hazardous_ingredient = msds[chemical].hazardous_ingredient;
+    var eye = msds[chemical].eye_contact;
+    var skin = msds[chemical].skin_contact;
+    var inhale = msds[chemical].inhalation;
+    var ingest = msds[chemical].ingestion;
+
+    CARD_TITLE = name + " Contact";
+    speechOutput = ""
+  }
 }
 
 function anythingElse(intent, session, callback) {
