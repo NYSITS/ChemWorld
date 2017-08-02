@@ -1,7 +1,7 @@
 'use strict';
 
 var questions = require('./questions');
-var msds = require('./msds');
+var msds = require('./materialSafetyDataSheets');
 
 /*
   Route the incoming request based on type (LaunchRequest, IntentRequest,
@@ -65,6 +65,8 @@ function onIntent(intentRequest, session, callback) {
   // Dispatch to custom intents here:
   if ("MSDSIntent" === intentName) {
     getMSDSInfo(intent, session, callback);
+  } else if ("HealthEffectsIntent" === intentName) {
+    healthEffects(intent, session, callback);
   } else if ("ChemicalsListIntent" === intentName) {
     chemicalsList(intent, session, callback);
   } else if ("QuizIntent" === intentName) {
@@ -163,6 +165,40 @@ function getMSDSInfo(intent, session, callback) {
     "speechOutput": speechOutput,
     "repromptText": repromptText,
     "previousPlace": "MSDS Info"
+  };
+
+  callback(sessionAttributes, buildSpeechletResponse(CARD_TITLE, speechOutput, repromptText, shouldEndSession));
+}
+
+function healthEffects(intent, session, callback) {
+  var sessionAttributes = {};
+  var CARD_TITLE;
+  var chemical = intent.slots.Chemical.value.toLowerCase();
+  var speechOutput;
+  var repromptText;
+  var shouldEndSession = false;
+
+  if (!msds[chemical]) {
+    speechOutput = "I'm sorry, I don't know about that chemical. Please try asking about a different chemical I do know about. ";
+    repromptText = "Please ask about a different chemical. ";
+    CARD_TITLE = "I Didn't Catch That Answer";
+  } else {
+    var location = msds[chemical].location;
+    var name = msds[chemical].common_name;
+    var hazardous_ingredient = msds[chemical].hazardous_ingredient;
+    var acute = msds[chemical].acute_health;
+    var chronic = msds[chemical].chronic_health;
+
+    CARD_TITLE = name + " Health Hazards";
+    speechOutput = "The hazardous ingredient in " + name + " is " + hazardous_ingredient + ", which can commonly be found " + location + ". The potential acute health effects include: " + acute
+    + ". While the potential chronic health effects include: " + chronic + ". Would you like more information? ";
+    repromptText = "Would you like more information? ";
+  }
+
+  sessionAttributes = {
+    "speechOutput": speechOutput,
+    "repromptText": repromptText,
+    "previousPlace": "Health Effects"
   };
 
   callback(sessionAttributes, buildSpeechletResponse(CARD_TITLE, speechOutput, repromptText, shouldEndSession));

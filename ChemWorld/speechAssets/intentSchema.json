@@ -10,6 +10,15 @@
       ]
     },
     {
+      "intent": "HealthEffectsIntent",
+      "slots": [
+        {
+          "name": "Chemical",
+          "type": "LIST_OF_CHEMICALS"
+        }
+      ]
+    },
+    {
       "intent": "ChemicalsListIntent"
     },
     {

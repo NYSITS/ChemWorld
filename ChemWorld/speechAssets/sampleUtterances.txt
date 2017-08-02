@@ -4,6 +4,10 @@ MSDSIntent give me information on {Chemical}
 MSDSIntent give me info about {Chemical}
 MSDSIntent give me info on {Chemical}
 
+HealthEffectsIntent what are the health hazards of {Chemical}
+HealthEffectsIntent what are some health hazards of {Chemical}
+HealthEffectsIntent health hazards of {Chemical}
+
 ChemicalsListIntent what chemicals can you tell me about
 ChemicalsListIntent what chemicals can i learn about
 ChemicalsListIntent tell me what chemicals you can tell me about
