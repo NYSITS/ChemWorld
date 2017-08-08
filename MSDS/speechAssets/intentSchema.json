@@ -1,0 +1,244 @@
+{
+  "intents": [
+    {
+      "intent": "GeneralInfoIntent",
+      "slots": [
+        {
+          "name": "Chemical",
+          "type": "LIST_OF_CHEMICALS"
+        }
+      ]
+    },
+    {
+      "intent": "FormulaIntent",
+      "slots": [
+        {
+          "name": "Chemical",
+          "type": "LIST_OF_CHEMICALS"
+        }
+      ]
+    },
+    {
+      "intent": "NameIntent",
+      "slots": [
+        {
+          "name": "Chemical",
+          "type": "LIST_OF_CHEMICALS"
+        }
+      ]
+    },
+    {
+      "intent": "StateIntent",
+      "slots": [
+        {
+          "name": "Chemical",
+          "type": "LIST_OF_CHEMICALS"
+        }
+      ]
+    },
+    {
+      "intent": "OdorIntent",
+      "slots": [
+        {
+          "name": "Chemical",
+          "type": "LIST_OF_CHEMICALS"
+        }
+      ]
+    },
+    {
+      "intent": "WeightIntent",
+      "slots": [
+        {
+          "name": "Chemical",
+          "type": "LIST_OF_CHEMICALS"
+        }
+      ]
+    },
+    {
+      "intent": "ColorIntent",
+      "slots": [
+        {
+          "name": "Chemical",
+          "type": "LIST_OF_CHEMICALS"
+        }
+      ]
+    },
+    {
+      "intent": "PHIntent",
+      "slots": [
+        {
+          "name": "Chemical",
+          "type": "LIST_OF_CHEMICALS"
+        }
+      ]
+    },
+    {
+      "intent": "BoilingIntent",
+      "slots": [
+        {
+          "name": "Chemical",
+          "type": "LIST_OF_CHEMICALS"
+        }
+      ]
+    },
+    {
+      "intent": "MeltingIntent",
+      "slots": [
+        {
+          "name": "Chemical",
+          "type": "LIST_OF_CHEMICALS"
+        }
+      ]
+    },
+    {
+      "intent": "CriticalIntent",
+      "slots": [
+        {
+          "name": "Chemical",
+          "type": "LIST_OF_CHEMICALS"
+        }
+      ]
+    },
+    {
+      "intent": "DOTIntent",
+      "slots": [
+        {
+          "name": "Chemical",
+          "type": "LIST_OF_CHEMICALS"
+        }
+      ]
+    },
+    {
+      "intent": "HealthIntent",
+      "slots": [
+        {
+          "name": "Chemical",
+          "type": "LIST_OF_CHEMICALS"
+        }
+      ]
+    },
+    {
+      "intent": "AcuteIntent",
+      "slots": [
+        {
+          "name": "Chemical",
+          "type": "LIST_OF_CHEMICALS"
+        }
+      ]
+    },
+    {
+      "intent": "ChronicIntent",
+      "slots": [
+        {
+          "name": "Chemical",
+          "type": "LIST_OF_CHEMICALS"
+        }
+      ]
+    },
+    {
+      "intent": "EyeIntent",
+      "slots": [
+        {
+          "name": "Chemical",
+          "type": "LIST_OF_CHEMICALS"
+        }
+      ]
+    },
+    {
+      "intent": "SkinIntent",
+      "slots": [
+        {
+          "name": "Chemical",
+          "type": "LIST_OF_CHEMICALS"
+        }
+      ]
+    },
+    {
+      "intent": "InhalationIntent",
+      "slots": [
+        {
+          "name": "Chemical",
+          "type": "LIST_OF_CHEMICALS"
+        }
+      ]
+    },
+    {
+      "intent": "IngestionIntent",
+      "slots": [
+        {
+          "name": "Chemical",
+          "type": "LIST_OF_CHEMICALS"
+        }
+      ]
+    },
+    {
+      "intent": "FireIntent",
+      "slots": [
+        {
+          "name": "Chemical",
+          "type": "LIST_OF_CHEMICALS"
+        }
+      ]
+    },
+    {
+      "intent": "SpillIntent",
+      "slots": [
+        {
+          "name": "Chemical",
+          "type": "LIST_OF_CHEMICALS"
+        }
+      ]
+    },
+    {
+      "intent": "SmallSpillIntent",
+      "slots": [
+        {
+          "name": "Chemical",
+          "type": "LIST_OF_CHEMICALS"
+        }
+      ]
+    },
+    {
+      "intent": "LargeSpillIntent",
+      "slots": [
+        {
+          "name": "Chemical",
+          "type": "LIST_OF_CHEMICALS"
+        }
+      ]
+    },
+    {
+      "intent": "SolidSpillIntent",
+      "slots": [
+        {
+          "name": "Chemical",
+          "type": "LIST_OF_CHEMICALS"
+        }
+      ]
+    },
+    {
+      "intent": "LiquidSpillIntent",
+      "slots": [
+        {
+          "name": "Chemical",
+          "type": "LIST_OF_CHEMICALS"
+        }
+      ]
+    },
+    {
+      "intent": "AMAZON.HelpIntent"
+    },
+    {
+      "intent": "AMAZON.YesIntent"
+    },
+    {
+      "intent": "AMAZON.NoIntent"
+    },
+    {
+      "intent": "AMAZON.StopIntent"
+    },
+    {
+      "intent": "AMAZON.CancelIntent"
+    }
+  ]
+}

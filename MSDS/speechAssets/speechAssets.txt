@@ -1,0 +1,62 @@
+GeneralInfoIntent {Chemical}
+GeneralInfoIntent tell me about {Chemical}
+GeneralInfoIntent to tell me about {Chemical}
+
+FormulaIntent what is the formula for {Chemical}
+FormulaIntent what is the chemical formula for {Chemical}
+
+NameIntent what is the common name for {Chemical}
+
+StateIntent what state is {Chemical} found in
+
+OdorIntent what does {Chemical} smell like
+
+WeightIntent how much does {Chemical} weigh
+
+ColorIntent what is the color of {Chemical}
+
+PHIntent what is the acidity of {Chemical}
+
+BoilingIntent boiling point for {Chemical}
+
+MeltingIntent melting point for {Chemical}
+
+CriticalIntent critical temperature for {Chemical}
+
+DOTIntent what is the d o t classification of {Chemical}
+
+HealthIntent what are the health hazards of {Chemical}
+
+AcuteIntent short term hazards
+AcuteIntent acute hazards
+AcuteIntent acute hazards of {Chemical}
+AcuteIntent short term hazards of {Chemical}
+
+ChronicIntent long term hazards
+ChronicIntent chronic hazards
+ChronicIntent chronic hazards of {Chemical}
+ChronicIntent long term hazards of {Chemical}
+
+EyeIntent what do i do if i get {Chemical} in my eyes
+
+SkinIntent i got {Chemical} on my skin
+
+InhalationIntent i inhaled {Chemical}
+
+IngestionIntent i ate {Chemical}
+
+FireIntent how do i put an {Chemical} out
+
+SpillIntent i spilled {Chemical}
+
+SmallSpillIntent small
+SmallSpillIntent small spill
+SmallSpillIntent small spill of {Chemical}
+
+LargeSpillIntent large
+LargeSpillIntent large spill
+LargeSpillIntent large spill of {Chemical}
+
+SolidSpillIntent {Chemical} is solid
+
+LiquidSpillIntent {Chemical} is liquid

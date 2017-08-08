@@ -1,0 +1,23 @@
+----------------------------------- LIST_OF_CHEMICALS -----------------------------------
+acetic acid
+
+
+----------------------------------- LIST_OF_TOPICS -----------------------------------
+common name
+physical state
+odor
+molecular weight
+color
+p h
+boiling point
+melting point
+critical temperature
+d o t classification
+acute health hazards
+chronic health hazards
+eye contact
+skin contact
+inhalation
+ingestion
+fire fighting
+spill
